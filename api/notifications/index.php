@@ -14,6 +14,7 @@ global $access_token,$collector_id,$notificationJSON;
 
 $rootPath = $_SERVER['DOCUMENT_ROOT'];
 
+file_put_contents('./log_' . date("Ynj") . '.log', $log, FILE_APPEND);
 
 // Recibe notificación:
 $received_json = str_replace(",}","}",file_get_contents('php://input'));
