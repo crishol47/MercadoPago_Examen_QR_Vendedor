@@ -14,7 +14,6 @@ global $access_token,$collector_id,$notificationJSON;
 
 $rootPath = $_SERVER['DOCUMENT_ROOT'];
 
-file_put_contents('./log_' . date("Ynj") . '.log', $log, FILE_APPEND);
 
 // Recibe notificación:
 $received_json = str_replace(",}","}",file_get_contents('php://input'));
@@ -24,7 +23,7 @@ $notification = json_decode($received_json,true);
 
 
 $fp = fopen('notifications.txt', 'w');
-fwrite($fp, 'ue sal'.$notification);
+fwrite($fp, $notification);
 fclose($fp);
 
 $n=0;

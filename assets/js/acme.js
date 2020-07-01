@@ -76,7 +76,7 @@ $(document).ready(function () {
 
 						var orderJSON = {
 							"external_reference": external_reference,
-							"notification_url": "http://crishol47-mp-examen-qr-vend.herokuapp.com/api/notifications",
+							"notification_url": "http://crishol47-mp-examen-qr-vend.herokuapp.com/api/notifications/",
 							"items": items
 						};
 
