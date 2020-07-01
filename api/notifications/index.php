@@ -24,7 +24,7 @@ $notification = json_decode($received_json,true);
 
 
 $fp = fopen('notifications.txt', 'w');
-fwrite($fp, 'ue sal');
+fwrite($fp, 'ue sal'.$notification);
 fclose($fp);
 
 $n=0;
